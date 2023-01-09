@@ -3,18 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+.main-box{
     display: flex;
+    height: calc(100vh - 100px);
 }
 
 /*SIDE-BAR SX*/
 .side-bar{
     width: 12rem;
-    height: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     background-color: black;
+    justify-content: space-between;
 }
 .logo{
     height: 5%;
@@ -41,10 +41,21 @@
     background-color: blue;
 }
 
+/*--------------------
+  -SPOTIFY CONTENT-
+---------------------*/
+
+.content {
+width: calc(100% - 12rem);
+}
+
 /*TOP-BAR*/
 .top-bar{
-    width: calc(100% - 12rem);
-    height: 10vh;
+    position: fixed;
+    width: 100%;
+    opacity: 0.8;
+    display: flex;
+    
     background-color: antiquewhite;
 }
 button{
@@ -54,17 +65,22 @@ button{
 }
 
 /*ALBUMS*/
-ul{
-    list-style: none;
+.main-menu{
+    overflow: auto;
+    height: 100%;
+    padding-top: 80px;
 }
-.main-menu>ul>li{
+ul{
+    text-align: center;
+}
+ul>li{
     display: inline;
 }
 
 /*FOOTER*/
 footer{
     width: 100%;
-    height: 10vh;
+    height: 100px;
     background-color: grey;
     display: flex;
     align-items: center;
