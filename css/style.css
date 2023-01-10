@@ -135,9 +135,6 @@ img:hover{
     opacity: 0.5; 
 }
 
-.fa:hover{
-    display: block;
-}
 p{
     font-size: 11px;
     color: grey;
@@ -186,12 +183,18 @@ footer{
     margin: 0 5px;
     color: grey;
 }
+.on-play>a>i:hover{
+    color: white;
+}
 .consol{
     margin-bottom: 12px;
 }
 .consol>a{
     color: white;
     padding: 0 8px;
+}
+.consol>a>i:hover{
+    transform: scale(1.2);
 }
 h6{
     color: white;
