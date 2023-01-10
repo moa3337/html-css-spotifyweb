@@ -2,6 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img{
+    width: 100%;
 }
 .main-box{
     display: flex;
@@ -11,39 +15,55 @@
 /*SIDE-BAR SX*/
 .side-bar{
     width: 12rem;
+    padding-left: 10px;
     display: flex;
     flex-direction: column;
     background-color: black;
-    justify-content: space-between;
+    justify-content: ;
 }
 .logo{
-    height: 5%;
-    width: 90%;
-    border: 1px dashed;
-    background-color: blue;
+    width: 60%;
+    margin-top: 10px;
 }
 .side-bar-menu{
-    height: 20%;
     width: 90%;
-    border: 1px dashed;
-    background-color: blue;
+    margin-top: 15px;
+}
+.side-bar * a{
+    text-decoration: none;
+    font-size: 11px;
+    display: block;
+    padding: 2px 0;
+    color: grey;
 }
 .side-bar-list{
-    height: 50%;
+    margin-top: 15px;
+    min-height: 35%;
+    max-height: 50%;
+    overflow: auto;
     width: 90%;
-    border: 1px dashed;
-    background-color: blue;
+}
+.side-bar-list>ul>li>a{
+    padding: 7px 0;
 }
 .user{
     height: 10%;
     width: 90%;
-    border: 1px dashed;
-    background-color: blue;
+    margin-top: auto;
+}
+.user>a>span{
+    color: white;
+}
+.hr{
+    width: 100%;
+    height: 1px;
+    margin: 6px 0;
+    background-color: grey;
 }
 
-/*--------------------
-  -SPOTIFY CONTENT-
----------------------*/
+/*****************
+ -SPOTIFY CONTENT-
+******************/
 
 .content {
 width: calc(100% - 12rem);
@@ -55,28 +75,77 @@ width: calc(100% - 12rem);
     width: 100%;
     opacity: 0.8;
     display: flex;
-    
-    background-color: antiquewhite;
+    background-color: black;
+}
+.button{
 }
 button{
-    border-radius: 15px;
-    padding: 10px;
-    margin: 0 auto;
+    border-radius: 20px;
+    padding: 10px 25px;
+    opacity: 0.8;
+    color: white;
+    font-size: 10px;
+    border: 1px solid white;
+    background-color: black;
 }
 
-/*ALBUMS*/
+/*ALBUMS-MENU*/
 .main-menu{
     overflow: auto;
     height: 100%;
     padding-top: 80px;
+    background-color: #141922;
 }
-ul{
+.main-menu>ul{
     text-align: center;
 }
 ul>li{
     display: inline;
 }
+ul>li>a{
+    text-decoration: none;
+    padding: 5px 7px;
+    font-size: 12px;
+    color: grey;
+}
 
+/*ALBUMS*/
+h3{
+    padding: 20px 0 12px 3px;
+    color: white;
+}
+h5{
+    padding: 7px 0;
+    color: white;
+}
+img:hover{
+    opacity: 0.5; 
+}
+.box>.fa{
+    position: absolute;
+    color: white;
+    left: 65px;
+    top: 65px;
+    display: ;
+}
+.fa:hover{
+    display: block;
+}
+p{
+    font-size: 11px;
+    color: grey;
+    padding-bottom: 5px;
+}
+.suggerimento{
+    margin: -5px 0 5px 3px;
+}
+.circol{
+    border-radius: 50%;
+}
+.circol>img{
+    object-fit: cover;
+    border-radius: 50%;
+}
 /*FOOTER*/
 footer{
     width: 100%;

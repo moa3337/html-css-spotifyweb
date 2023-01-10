@@ -2,24 +2,57 @@
 <html lang="en">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-12col.css">
     <title>Spotify</title>
 </head>
 <body>
     <div class="main-box">   
         <!--SIDE BAR SX-->
         <div class="side-bar">
-            <div class="logo"></div>
-            <div class="side-bar-menu"></div>
-            <div class="side-bar-list"></div>
-            <div class="user"></div>
+            <div class="logo">
+                <a href=""><img src="./pictures/logo.svg" alt=""></a>
+            </div>
+            <div class="side-bar-menu">
+                <a href=""><i style="font-size:22px" class="fa">&#xf015;</i> Home</a>
+                <a href=""><i style="font-size:22px" class="fa">&#xf002;</i> Cerca</a>
+                <a href=""><i style="font-size:22px" class="fa">&#xf02d;</i> La tua libreria</a>
+            </div>
+            <div class="side-bar-list">
+                <h5>PLAYLIST</h5>
+                <a href="">
+                    <i style="font-size: 35px;" class="material-icons">&#xe146;</i> Crea PLAYLIST
+                </a>
+                <ul>
+                    <li><a href="">Nuova Playlist</a></li>
+                    <li><a href="">Nuova Playlist</a></li>
+                    <li><a href="">Nuova Playlist</a></li>
+                    <li><a href="">Nuova Playlist</a></li>
+                    <li><a href="">Nuova Playlist</a></li>
+                    <li><a href="">Nuova Playlist</a></li>
+                    <li><a href="">Nuova Playlist</a></li>
+                </ul>
+            </div>
+            <div class="user">
+                <a href=""><i style="font-size: 12px;" class="material-icons">&#xe2c4;</i> Insatlla app</a>
+                <div class="hr"></div>
+                <a href="">
+                    <i style="font-size:20px" class="fa">&#xf2bd;</i>
+                    <span><strong>John Doe</strong></span>
+                    
+                </a>
+            </div>
         </div>
         
         <!--SPOTIFY CONTENT-->
         <section class="content">
             <!--TOP-BAR-->
             <div class="top-bar">
-                <button>EFFETTUA L'UPGRADE</button>
+                <div class="button">
+                    <button><strong>EFFETTUA L'UPGRADE</strong></button>
+                </div>
             </div>
             
             <!--ALBUMS-->
@@ -32,6 +65,88 @@
                     <li><a href="">NUOVE USCITE</a></li>
                     <li><a href="">SCOPRI</a></li>
                 </ul>
+                <div class="container">
+                    <h3>Recentely Played</h3>
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="box">
+                                <img src="./pictures/metal_lifting.jpg" alt="">
+                                <h5>Heavy Metal</h5>
+                                <p>subtitle</p>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="box">
+                                <img src="./pictures/stranger.jpeg" alt="">
+                                <i style="font-size:80px" class="fa">&#xf01d;</i>
+                                <h5>Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h5>
+                                <p>Kyle Dixon & Michael Stain</p>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="box">
+                                <img src="./pictures/aquietplace.jpeg" alt="">
+                                <h5>A Quite Place</h5>
+                                <p>subtitle</p>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="box">
+                                <img src="./pictures/split.jpeg" alt="">
+                                <h5>split</h5>
+                                <p>subtitle</p>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="box">
+                                <img src="./pictures/cure.jpeg" alt="">
+                                <h5>A cure for wellness</h5>
+                                <p>subtitle</p>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="box">
+                                <img src="./pictures/sinister.jpeg" alt="">
+                                <h5>Sinister</h5>
+                                <p>subtitle</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Creato per John Doe</h3>
+                    <p class="suggerimento">Più ascolti più saranno accurati i suggerimenti</p>
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="box">
+                                <img src="./pictures/radar.jpeg" alt="">
+                                <h5>Release radar</h5>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="box">
+                                <img src="./pictures/mixdaily.jpeg" alt="">
+                                <h5>Daily mix</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3>Ascolti più popolari</h3>
+                    <p class="suggerimento">Più ascolti più saranno accurati i suggerimenti</p>
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="box circol">
+                                <img src="./pictures/youg.jpeg" alt="">
+                                <h5>Lana del Ray</h5>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="box circol">
+                                <img src="./pictures/einaudi.jpeg" alt="">
+                                <h5>Ludovico Einaudi</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
