@@ -9,7 +9,7 @@ img{
 }
 .main-box{
     display: flex;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
 }
 
 /*SIDE-BAR SX*/
@@ -35,6 +35,9 @@ img{
     display: block;
     padding: 2px 0;
     color: grey;
+}
+.side-bar * a:hover{
+    color: white;
 }
 .side-bar-list{
     margin-top: 15px;
@@ -71,13 +74,15 @@ width: calc(100% - 12rem);
 
 /*TOP-BAR*/
 .top-bar{
-    position: fixed;
-    width: 100%;
-    opacity: 0.8;
-    display: flex;
+    width: calc(100% - 13rem);
+    justify-content: flex-end;
     background-color: black;
+    position: fixed;
+    display: flex;
+    opacity: 0.6;
 }
 .button{
+    padding: 16px;
 }
 button{
     border-radius: 20px;
@@ -85,8 +90,12 @@ button{
     opacity: 0.8;
     color: white;
     font-size: 10px;
+    cursor: pointer;
     border: 1px solid white;
     background-color: black;
+}
+button:hover{
+    transform: scale(1.2);
 }
 
 /*ALBUMS-MENU*/
@@ -99,6 +108,9 @@ button{
 .main-menu>ul{
     text-align: center;
 }
+.main-menu>ul>li>a:hover{
+    color: white;
+}
 ul>li{
     display: inline;
 }
@@ -106,6 +118,7 @@ ul>li>a{
     text-decoration: none;
     padding: 5px 7px;
     font-size: 12px;
+    cursor: pointer;
     color: grey;
 }
 
@@ -121,13 +134,7 @@ h5{
 img:hover{
     opacity: 0.5; 
 }
-.box>.fa{
-    position: absolute;
-    color: white;
-    left: 65px;
-    top: 65px;
-    display: ;
-}
+
 .fa:hover{
     display: block;
 }
@@ -149,15 +156,71 @@ p{
 /*FOOTER*/
 footer{
     width: 100%;
-    height: 100px;
-    background-color: grey;
+    height: 80px;
+    background-color: #282828;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .bottom-menu{
-    width: 25%;
+    width: 15%;
     height: 80%;
     border: 1px dashed;
+    
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+.bottom-menu-big{
+    width: 35%;
+    height: 80%;
+    border: 1px dashed;
+    text-align: center;
+}
+.on-play{
+    width: 18%;
+    align-items: center;
+    display: flex;
+}
+.on-play>a{
+    margin: 0 5px;
+    color: grey;
+}
+.consol{
+    margin-bottom: 12px;
+}
+.consol>a{
+    color: white;
+    padding: 0 8px;
+}
+h6{
+    color: white;
+}
+.progress-bar{
+    width: 70%;
+    height: 3px;
+    margin: 0 auto;
+    border-radius: 1px;
+    position: relative;
+    background-color: grey;
+}
+.progress{
+    width: 30%;
+    height: 100%;
+    background-color: white;
+}
+.progress:hover{
+    background-color: greenyellow;
+    position: relative;
+}
+.progress::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    top: -8;
+    right: -8;
+    border-radius: 50%;
     background-color: white;
 }
