@@ -227,3 +227,20 @@ h6{
     border-radius: 50%;
     background-color: white;
 }
+
+/*********************************
+*****- MEDIA QUERYES TABLET -****/
+@media screen and (max-width:770px){
+    .col-2{
+        flex-basis: calc((100% / 12) * 3);
+        max-width: calc((100% / 12) * 3);
+    }
+}
+
+ @media screen and (max-width:480px) {
+     .col-2{
+        flex-basis: calc((100% / 12) * 6);
+        max-width: calc((100% / 12) * 6);
+     }
+}
+    
